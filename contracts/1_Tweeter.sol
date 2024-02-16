@@ -58,4 +58,18 @@ contract TweetContent{
     function disallow(address _operator) public {
         operators[msg.sender][_operator]=false;
     }
+    function getLatestTweets(uint count) public view  returns(Tweet[] memory){
+        require(count>0 && count<= nextId,"Count is not proper");
+
+        Tweet[] memory _tweets = new Tweet[](count);
+        uint j;
+
+        for(uint i=nextId-count;i<nextId;i++){
+            Tweet storage _structure = tweets[i];
+            _tweets[j]=Tweet(_structure.id,_structure.author,_structure.content,_structure.createdAt);
+            j++;
+        }
+        return  _tweets;
+
+    }
 }
