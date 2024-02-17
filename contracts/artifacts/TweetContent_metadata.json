@@ -382,11 +382,11 @@
 	},
 	"sources": {
 		"contracts/1_Tweeter.sol": {
-			"keccak256": "0xce0e425aa8a4a4cb42e93c0eed8eddef3da19249d890a43a9fafdab3522b039a",
+			"keccak256": "0x9ebe5208110bafa377c972e7ddc39efeb4fdae305bce2a8b10149b1c48e27119",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://21c2fc6941dd1cc6332cc56529a25f8fd63d442aadceae127e2cd7f87a2494f4",
-				"dweb:/ipfs/QmbHDidYWWySoqT8EjDi7WKDm97KZq5Bsre4MseFxVyBFX"
+				"bzz-raw://0ea5cf4cf308bdae4206768079be652a1a346b4fddc3ddfa5a4aa2f3aaf3a698",
+				"dweb:/ipfs/QmUDTSvXBMdv5QSvn1fpdwB5WgghSz83tGHukX3GCu2JL3"
 			]
 		}
 	},

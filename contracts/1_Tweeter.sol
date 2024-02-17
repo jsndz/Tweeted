@@ -27,11 +27,13 @@ contract TweetContent{
     uint nextMessageId;
 
     function _tweet(address _from,string memory _content) internal  {
+        require((msg.sender== _from),"Not a valid user");
         tweets[nextId]=Tweet(nextId,_from,_content,block.timestamp);
         nextId=nextId+1;
     }
 
     function _sendMessage(address _from,address _to,string memory _content) internal {
+        require((msg.sender== _from),"Not a valid user");
         conversations[_from].push(Message(nextMessageId,_content,_to,_from,block.timestamp));
         nextMessageId++;
     }
