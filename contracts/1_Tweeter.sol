@@ -72,4 +72,17 @@ contract TweetContent{
         return  _tweets;
 
     }
+    function getLatestofUser(address _user,uint count) public view  returns(Tweet[] memory){
+        Tweet[] memory _tweets = new Tweet[](count);
+        require(count>0 && count<= nextId,"Count is not proper");
+        uint j;
+
+        for(uint i=tweetsOf[_user].length-count;i<tweetsOf[_user].length;i++){
+            Tweet storage _structure = tweets[i];
+            _tweets[j]=Tweet(_structure.id,_structure.author,_structure.content,_structure.createdAt);
+            j++;
+        }
+        return  _tweets;
+
+    }
 }

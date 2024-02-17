@@ -157,6 +157,52 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "count",
+						"type": "uint256"
+					}
+				],
+				"name": "getLatestofUser",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "author",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createdAt",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct TweetContent.Tweet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					},
@@ -336,11 +382,11 @@
 	},
 	"sources": {
 		"contracts/1_Tweeter.sol": {
-			"keccak256": "0xf9087a883ec23348d192d7ebd1b831d71230207bf12ce10077f60a9f56b699fa",
+			"keccak256": "0xce0e425aa8a4a4cb42e93c0eed8eddef3da19249d890a43a9fafdab3522b039a",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://98f207b2b0c1046abee9254ac58e36473896019036515f2e0c4db3362c080549",
-				"dweb:/ipfs/QmYph7zzvrrmrvzB3cRABBucuDnbASgdgEde4ULWeSexhy"
+				"bzz-raw://21c2fc6941dd1cc6332cc56529a25f8fd63d442aadceae127e2cd7f87a2494f4",
+				"dweb:/ipfs/QmbHDidYWWySoqT8EjDi7WKDm97KZq5Bsre4MseFxVyBFX"
 			]
 		}
 	},
